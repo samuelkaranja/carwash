@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>SIGN UP</title>
-	<link rel="stylesheet" href="style.css">
-</head>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="style.css">
+	</head>
 	<body>
 		<div class="header">
 			<div class="mylogo">
-				<h2><a href="lase.html">LASE CARWASH</a></h2>
+				<h2><a href="index.html">LASE CARWASH</a></h2>
 			</div>
 
 			<div class="navbar">
@@ -16,71 +17,49 @@
 					<li><a href="index.html#price">PRICES</a></li>
 					<li><a href="about.html">ABOUT</a></li>
 					<li><a href="index.html#contact">CONTACTS</a></li>
+					<!-- <button><a href="sign.html">SIGN UP</a></button> -->
 				</ul>
 			</div>
 		</div>
-		
-		<div class="sign">
-			<form method="post" action="" onsubmit="return confirm()">
-				<input type="text" name="fname" id="fname" autocomplete="off" autofocus placeholder="FirstName"><br><br>
-				<input type="text" name="lname" id="lname" autocomplete="off" placeholder="LastName"><br><br>
-				<input type="text" name="email" id="email" autocomplete="off" placeholder="Email"><br><br>
-				<input type="number" name="phone" id="phone" autocomplete="off" placeholder="PhoneNumber"><br><br>
-				<input type="password" name="pass" id="pass" placeholder="Password"><br><br>
-				<input type="password" name="cpass" id="cpass" placeholder="ConfirmPassword"><br><br>
-				<button type="submit">Submit</button>
-			</form>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<form class="sign_frm" action="index.html" method="post">
+						<h2>SIGN UP</h2>
+						<input class="input" type="text" name="" value="" placeholder="First Name"><br><br>
+						<input class="input" type="text" name="" value="" placeholder="Last Name"><br><br>
+						<input class="input" type="text" name="" value="" placeholder="Username"><br><br>
+						<input class="input" type="email" name="" value="" placeholder="Email"><br><br>
+						<input class="input" type="password" name="" value="" placeholder="Password"><br><br>
+						<input class="input" type="password" name="" value="" placeholder="Confrim Password"><br><br>
+						<button class="btn"><a href="sign.html">SIGN UP</a></button>
+						<p>If you are already a member.....<a href="login.html">Login</a></p>
+					</form>
+				</div>
+			</div>
 		</div>
-		
-		<script>
-			function confirm(){
-				var fname = document.getElementById("fname");
-				var lname = document.getElementById("lname");
-				var email = document.getElementById("email");
-				var phone = document.getElementById("phone");
-				var pass = document.getElementById("pass");
-				var cpass = document.getElementById("cpass");
-				
-				if(fname.value.trim() == "" && lname.value.trim() == "" && email.value.trim() == "" && phone.value.trim() == "" && pass.value.trim() == "" && cpass.value.trim() == ""){
-					alert("Fill in the blanks");
-					return false;
-				}
-				
-				if(fname.value.trim() == ""){
-				   	alert("Enter firstname");
-					return false;
-				}
-				
-				if(lname.value.trim() == ""){
-				   	alert("Enter lastname");
-					return false;
-				}
-				
-				if(email.value.trim() == ""){
-				   	alert("Enter email");
-					return false;
-				}
-				
-				if(phone.value.trim() == ""){
-				   	alert("Enter phone number");
-					return false;
-				}
-				
-				if(pass.value.trim() == ""){
-				   	alert("Enter password");
-					return false;
-				}
-				
-				if(cpass.value.trim() == ""){
-				   	alert("Confirm password");
-					return false;
-				}
-				
-				if(pass.value.trim() !== cpass.value.trim()){
-				   	alert("Passwords do not match");
-					return false;
-				}
-			}
-		</script>		
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<div class="info_1">
+							<span><a href="lase.html">Blog</a></span>
+							<span><a href="#contact">Contact Us</a></span>
+
+						</div>
+					</div>
+
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<div class="info_1">
+							<span><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Email:info@lase.co.ke</a></span>
+							<span><a href="">Helpline:0719413656</a></span>
+							<span><a href="">FAQ</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

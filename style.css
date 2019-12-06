@@ -5,12 +5,13 @@ html,body{
 
 .header{
 	padding: 20px 0 60px 0;
-	background-color: rgb(0,0,128,0.1);
+	background-color: #009688;
+	border-bottom: 3px solid slateblue;
 }
 
 .mylogo h2{
 	float: left;
-	margin: 0 0 0 80px;
+	margin: 5px 0 0 80px;
 	font-family: cursive;
 }
 
@@ -21,7 +22,7 @@ html,body{
 
 .navbar{
 	float: right;
-	margin: 0 40px 0 0;
+	margin: 0 70px 0 0;
 }
 
 .navbar li{
@@ -30,7 +31,7 @@ html,body{
 	padding: 0 30px 0 10px;
 }
 
-.navbar a{
+.navbar li a{
 	text-decoration: none;
 	color: white;
 }
@@ -41,15 +42,20 @@ html,body{
 }
 
 .navbar button{
-	background-color: orange;
+	/* background-color: orange; */
 	border: none;
 	border-radius: 5px;
 	padding: 5px 8px 5px 8px;
 }
 
-.navbar button a:hover{
-	color: white;
+.navbar button a{
 	text-decoration: none;
+	color: black;
+}
+
+.navbar button a:hover{
+	text-decoration: none;
+	color: none;
 }
 
 /*......section_0.........*/
@@ -59,7 +65,7 @@ html,body{
 	background-image:url(bg1.3.1.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	padding: 130px 0 200px;
+	padding: 100px 0 180px;
 }
 .section_0 h1{
 	padding: 100px 0 70px 0;
@@ -115,7 +121,8 @@ html,body{
 .p-price button{
 	background-color: orange;
 	border: none;
-	padding: 8px 40px 8px 40px;
+	border-radius: 5px;
+	padding: 8px 20px 8px 20px;
 }
 
 .p-price a{
@@ -133,23 +140,23 @@ html,body{
 
 /*.........section_2.......*/
 
-.section_2{
+.section_4{
 	background-color:darkslateblue;
 	padding: 30px;
 }
 
-.section_2 h2{
+.section_4 h2{
 	color: white;
 }
 
-.section_2 input{
+.section_4 input{
 	border: none;
 	width: 250px;
 	padding: 5px;
 	margin-top: 5px;
 }
 
-.section_2 button{
+.section_4 button{
 	background-color: orange;
 	color: white;
 	padding: 10px;
@@ -157,9 +164,31 @@ html,body{
 	border-radius: 5px;
 }
 
-.section_2 button a{
+.section_4 button a{
 	color: white;
 	text-decoration: none;
+}
+
+/*........Section_2.......*/
+.section_2{
+	background-color: cornsilk;
+	padding: 80px 0 100px 0;
+	text-align: center;
+}
+
+.section_2 h2{
+	padding-bottom: 40px;
+	font-size: 40px;
+	color:seagreen; 
+}
+
+.section_2 img{
+	width: 450px;
+	height: 250px;
+}
+
+.section_2 p{
+	font-family: Georgia, serif;
 }
 
 /*......section 2(About us)........*/
@@ -206,13 +235,14 @@ html,body{
 }
 
 .contact h1{
-	color: orange;
+	color: #d23f71;
 	padding: 30px;
 }
 
 .contact input{
 	width: 250px;
 	padding: 5px;
+	text-align: center;
 }
 
 .contact textarea{
@@ -222,7 +252,7 @@ html,body{
 
 .contact button {
 	border: none;
-	background-color: green;
+	background-color: #009688;
 	padding: 10px 50px 10px 50px;
 	border-radius: 5px;
 	margin-bottom: 40px;
@@ -244,23 +274,33 @@ footer{
 	color: white;
 }
 
-/*.........about page........*/
-
-/*..........sign up form...........*/
-.sign{
+/*.........Sign up........*/
+.input{
 	text-align: center;
-	padding-top: 150px;
-}
-
-.sign input{
 	width: 250px;
-	height: 20px;
-	padding: 5px;
+	height: 30px;
 }
 
-.sign button{
-	background-color: orange;
-	padding: 10px 30px 10px 30px;
+.btn{
 	border: none;
+	border-radius: 5px;
+	background-color: darkslateblue;
+	padding: 10px 15px 10px 15px;
 	color: white;
+}
+
+.btn a{
+	text-decoration: none;
+	color: white;
+}
+
+.sign_frm{
+	text-align: center;
+	padding: 70px 0 120px 0;
+}
+
+/* ........login........ */
+.log_frm{
+	text-align: center;
+	padding: 130px 0 200px 0;
 }
